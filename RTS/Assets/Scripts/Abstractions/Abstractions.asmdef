@@ -1,9 +1,7 @@
 {
-    "name": "Core",
+    "name": "Abstrations",
     "rootNamespace": "",
-    "references": [
-        "GUID:6d71f9ec3b409b34fb3cf80e9a3ba36b"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
