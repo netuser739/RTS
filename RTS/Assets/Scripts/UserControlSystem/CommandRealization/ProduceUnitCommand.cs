@@ -1,11 +1,12 @@
 ﻿using Abstractions.Commands.CommandInterfaces;
 using UnityEngine;
+using Utils;
 
 namespace UserControlSystem.CommandRealization
 {
     public sealed class ProduceUnitCommand : IProduceUnitCommand
     {
-        [SerializeField] private GameObject _unitPrefab;
+        [InjectAsset("Chomper")] private GameObject _unitPrefab;
 
         public GameObject UnitPrefab => _unitPrefab;
     }

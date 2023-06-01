@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UserControlSystem.CommandRealization;
 using UserControlSystem.UI.View;
+using Utils;
 
 namespace UserControlSystem.UI.Presenter
 {
@@ -13,7 +14,9 @@ namespace UserControlSystem.UI.Presenter
     {
         [SerializeField] private SelectableValue _selectable;
         [SerializeField] private CommandButtonsView _view;
+
         private ISelectable _currentSelectable;
+        private AssetsContext _context;
 
         void Start()
         {
@@ -43,7 +46,7 @@ namespace UserControlSystem.UI.Presenter
             var unitProducer = commandExecutor as CommandExecutorBase<IProduceUnitCommand>;
             if (unitProducer != null)
             {
-                unitProducer.ExecuteSpecificCommand(new ProduceUnitCommand());
+                unitProducer.ExecuteSpecificCommand(_context.Inject(new ProduceUnitCommand()));
                 return;
             }
             throw new ApplicationException($"{nameof(CommandButtonPresenter)}.{nameof(ONButtonClick)}:" +
