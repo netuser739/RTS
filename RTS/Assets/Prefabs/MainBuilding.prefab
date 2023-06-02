@@ -174,7 +174,7 @@ GameObject:
   - component: {fileID: 2452964024217379373}
   - component: {fileID: 4815223060555631935}
   - component: {fileID: 3535019244136382326}
-  - component: {fileID: 5737336125688792399}
+  - component: {fileID: 900591660221870782}
   m_Layer: 0
   m_Name: MainBuilding
   m_TagString: Untagged
@@ -251,11 +251,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77f8bba783a81f84b8c05aa3829781b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _unitPrefab: {fileID: 7918197756058099863, guid: 94f7669bab2000d44acce4645c457d97, type: 3}
   _unitsParent: {fileID: 0}
   _maxHealth: 1000
   _icon: {fileID: 0}
---- !u!114 &5737336125688792399
+--- !u!114 &900591660221870782
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -264,10 +263,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 2452964024236862125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ec851e83faba72349b8a6f40071ed2c1, type: 3}
+  m_Script: {fileID: 11500000, guid: 7bbaa33de4f176c47817c3aa931f0534, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _selectableValue: {fileID: 11400000, guid: 68161a2a435b4dc4d8963246ac2bc43a, type: 2}
+  _renderers:
+  - {fileID: 2452964024234669167}
+  - {fileID: 2452964024234669161}
+  - {fileID: 2452964024234669163}
+  _outlineMaterial: {fileID: 0}
 --- !u!1 &2452964024236862127
 GameObject:
   m_ObjectHideFlags: 0
